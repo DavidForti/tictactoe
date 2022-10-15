@@ -7,17 +7,14 @@
     <link rel="stylesheet" href="style.css">
     <title>tice tac toe </title>
 </head>
+
 <body>
     
-
-
     <img  class ="morty-over d-none" id = "MortyWin"  src="img/morty-win.webp">
 
     <img  class ="game-over d-none" id = "RickWin" src="img/game-over.jpeg">
 
     <button id = "restart-btn" class="restart-button d-none" onclick="restart()">Restart</button>
-
-    
 
     <div class = "player-panel">
         <div class = "palyer-inactiv" id = "player-1">
@@ -27,7 +24,6 @@
             <img  class ="player" src="./img/morty.png"> Morty
         </div>
     </div>
-
 
 <div class = "div-table">
         <table>
@@ -46,8 +42,8 @@
                 <img id = "rick-2" class ="shape d-none" src="./img/rick.png">
             </td> 
         </tr>
-    
     </table>
+
     <table>
         <tr>
             <td onclick = "fillShape(3)">
@@ -64,6 +60,7 @@
             </td>
         </tr>
     </table>
+
     <table>
         <tr>
             <td onclick = "fillShape(6)">
@@ -81,7 +78,6 @@
         </tr>
     </table>
     
-    
     <div  id="line-1" class = "horizontal  line1" style = "top: 63px;right: 20 ;"></div>
     <div  id="line-2" class = "horizontal  line2" style = "top: 198px;right: 20;"></div>
     <div  id="line-3" class = "horizontal line3" style = "right: 20px;top: 329px;"></div>
@@ -90,11 +86,8 @@
     <div  id="line-7" class = "horizontal line6" style = "top:188px; left: 13px; transform: rotate(45deg);  width:391px; transform: scaleX(0.0);"></div>
     <div  id="line-6" class = "vertikal line7" style = "top:197px; left:163px"></div>
     <div  id="line-8" class = "horizontal line8" style = "top: 188px;left: 13px; transform: rotate(-45deg); width:391px; transform: scaleX(0.0);"></div>
+
 </div>
     
-
-
-
-
 </body>
 </html>

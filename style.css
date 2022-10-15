@@ -28,11 +28,13 @@ body{
     font-size: 32px;
     margin-bottom: 32px;
 }
+
 .player-panel img {
     width: 60px;
     height: 60px;
     margin-right: 16px;
 }
+
 .player-panel div{
     display: flex;
     align-items: center;
@@ -57,26 +59,27 @@ td{
     border-left: 0;
     cursor:pointer;
   }
+
   td:hover{
     background-color: rgb(236, 235, 235);
   }
- 
-
-
 
   tr td:last-child {
     border-right: 0;
-
   }
+
   table tr:first-child td {
     border-bottom: 0;
   }
+
 .table-top  {
     border-top: 0;
   }
+
   table {
     border-collapse: collapse;
   }
+
   .shape{
     position: absolute;
     width: 80px;
@@ -84,6 +87,7 @@ td{
     top: 25px;
     left: 25px;
   }
+
   .d-none{
     display: none;
   }
@@ -107,8 +111,8 @@ td{
     background-color: #9f9f9f;;
     position: absolute;
     transition: transform 225ms ease-in-out;
-
   }
+
   .game-over{
     position: absolute;
     left: 10%;
@@ -118,6 +122,7 @@ td{
     border-radius: 20%;
     animation: zoomIn 225ms ease-in-out;
   }
+
   .morty-over{
     position: absolute;
     left: 10%;
@@ -127,6 +132,7 @@ td{
     border-radius: 20%;
     animation: zoomIn 225ms ease-in-out;
   }
+
   @keyframes zoomIn{
     from{
       opacity: 0;
@@ -151,11 +157,13 @@ td{
     position: absolute;
     border-radius: 50%;
   }
+
   .restart-button:hover{
     background-color: #686666;
   }
   
 @media  (max-width: 375px){
+
   td{
     position: relative;
     width: 133px;
@@ -166,10 +174,12 @@ td{
     border-left: 0;
     cursor:pointer;
   }
+
   .div-table{
     width: 200%;
     height: 160%;
   }
+
   .shape {
     position: absolute;
     width: 76px;
@@ -178,7 +188,6 @@ td{
     left: 18px;
   }
   
-
   .line1{
     position: absolute;
     transform: scaleX(0.0);
@@ -186,6 +195,7 @@ td{
     right: -68px !important;
     width: 311px;
   }
+
   .line2{
     position: absolute;
     transform: scaleX(0.0);
@@ -193,6 +203,7 @@ td{
     right: -68px !important;
     width: 311px;
   }
+
   .line3{
     position: absolute;
     transform: scaleX(0.0);
@@ -200,18 +211,21 @@ td{
     right: -68px !important;
     width: 311px;
   }
+
   .line4{
     position: absolute;
     top: 288px !important;
     right: -91px !important;
     width: 363px;
   }
+
   .line5{
     position: absolute;
     top: 288px !important;
     right: 25px !important;
     width: 363px;
   }
+
   .line6{
     top: 289px !important;
     left: -114px !important;
@@ -219,12 +233,14 @@ td{
     transform: rotate(-45deg) scaleX(1);
     position: absolute;
   }
+
   .line7{
     position: absolute;
     top: 288px !important;
     left: 24px !important;
     width: 363px;
   }
+
   .line8{
     top: 289px !important;
     left: -114px !important;
@@ -232,6 +248,7 @@ td{
     transform: rotate(-45deg) scaleX(1);
     position: absolute;
   }
+
   .game-over {
     position: absolute;
     left: -56%;
@@ -243,6 +260,7 @@ td{
     height: 411px;
     top: 82px;
   }
+
   .morty-over{
     position: absolute;
     left: -56%;
