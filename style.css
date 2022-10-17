@@ -274,4 +274,95 @@ td{
   }
 
 }
+
+ 
+@media  (min-width: 900px){
+
+  .line1{
+    position: absolute;
+    transform: scaleX(0.0);
+    top: 217px !important;
+    right: 435px !important;
+    width: 370px;
+  }
+
+  .line2{
+    position: absolute;
+    transform: scaleX(0.0);
+    top: 350px !important;
+    right: 435px !important;
+    width: 370px;
+  }
+
+  .line3{
+    position: absolute;
+    transform: scaleX(0.0);
+    top: 485px !important;
+    right: 435px !important;
+    width: 370px;
+  }
+
+  .line4{
+    position: absolute;
+    top: 351px !important;
+    right: 437px !important;
+    width: 363px;
+  }
+
+  .line5{
+    position: absolute;
+    top: 349px !important;
+    right: 575px !important;
+    width: 363px;
+  }
+
+  .line6{
+    top: 361px !important;
+    left: 420px !important;
+    width: 391px;
+    transform: rotate(-45deg) scaleX(1);
+    position: absolute;
+  }
+
+  .line7{
+    position: absolute;
+    top: 351px !important;
+    left: 570px!important;
+    width: 363px;
+  }
+
+  .line8{
+    top: 347px !important;
+    left: 420px !important;
+    width: 391px;
+    transform: rotate(-45deg) scaleX(1);
+    position: absolute;
+  }
+
+  .game-over {
+    position: absolute;
+    left: 10%;
+    width: 79%;
+    height: 450px;
+    z-index: 2;
+    border-radius: 20%;
+    animation: zoomIn 225ms ease-in-out;
+    top: 103px;
+  }
+
+  .morty-over{
+    position: absolute;
+    left: 10%;
+    width: 79%;
+    height: 450px;
+    z-index: 2;
+    border-radius: 20%;
+    animation: zoomIn 225ms ease-in-out;
+    top: 103px;
+  }
+  .restart-button{
+    top:563px;
+  }
+
+}
   
