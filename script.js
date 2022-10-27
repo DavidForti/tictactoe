@@ -19,6 +19,7 @@ function fillShape(id){
         checkForWin();
     }
 }
+
 //  spiel von neu beginnen 
 function restart(){ 
     gameOver = false;
@@ -98,6 +99,6 @@ function checkForWin(){
             for (let i = 1;   i < 9; i ++) {
                 document.getElementById('line-' +i).classList.remove('d-none');     
             }       
-        },900);
+        },1000);
     }
 }

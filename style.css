@@ -14,6 +14,10 @@ body{
     background-size: cover;
    }
 
+.center{
+  position: relative;
+  display: flex;
+}
 *{
   padding: 0;
   margin: 0;
@@ -189,180 +193,132 @@ td{
   }
   
   .line1{
-    position: absolute;
+    bottom: 334px !important;
+    left: 20px !important;
+    width: 310px;
     transform: scaleX(0.0);
-    top: 153px !important;
-    right: -68px !important;
-    width: 311px;
   }
 
   .line2{
-    position: absolute;
+    bottom: 195px !important;
+    left: 20px !important;
+    width: 310px;
     transform: scaleX(0.0);
-    top: 283px !important;
-    right: -68px !important;
-    width: 311px;
   }
 
   .line3{
-    position: absolute;
+    bottom: 60px !important;
+    left: 20px !important;
+    width: 310px;
     transform: scaleX(0.0);
-    top: 418px !important;
-    right: -68px !important;
-    width: 311px;
   }
 
   .line4{
-    position: absolute;
-    top: 288px !important;
-    right: -91px !important;
+    bottom: 196px !important;
+    right: -5px !important;
     width: 363px;
   }
 
   .line5{
-    position: absolute;
-    top: 288px !important;
-    right: 25px !important;
+    bottom: 196px !important;
+    right: 113px !important;
     width: 363px;
+
   }
 
   .line6{
-    top: 289px !important;
-    left: -114px !important;
+    bottom: 198px !important;
+    left: -18px !important;
     width: 391px;
     transform: rotate(-45deg) scaleX(1);
     position: absolute;
   }
 
   .line7{
-    position: absolute;
-    top: 288px !important;
-    left: 24px !important;
+    bottom: 196px !important;
+    left: 111px !important;
     width: 363px;
+
   }
 
   .line8{
-    top: 289px !important;
-    left: -114px !important;
+    bottom: 198px !important;
+    left: -18px !important;
     width: 391px;
     transform: rotate(-45deg) scaleX(1);
     position: absolute;
   }
 
   .game-over {
-    position: absolute;
-    left: -56%;
-    right: 10%;
-    width: 212%;
-    z-index: 2;
-    border-radius: 20%;
-    animation: zoomIn 225ms ease-in-out;
-    height: 411px;
-    top: 82px;
+    position: absolute !important;
+    left: -56% !important;
+    right: 10% !important;
+    width: 212%!important;
+    z-index: 2!important;
+    border-radius: 20%!important;
+    animation: zoomIn 225ms ease-in-out!important;
+    height: 411px!important;
+    top: 82px!important;
   }
 
   .morty-over{
-    position: absolute;
-    left: -56%;
-    right: 10%;
-    width: 212%;
-    z-index: 2;
-    border-radius: 20%;
-    animation: zoomIn 225ms ease-in-out;
-    height: 411px;
-    top: 82px;
+    position: absolute !important;
+    left: -56% !important;
+    right: 10% !important;
+    width: 212%!important;
+    z-index: 2!important;
+    border-radius: 20%!important;
+    animation: zoomIn 225ms ease-in-out!important;
+    height: 411px!important;
+    top: 82px!important;
   }
 
 }
 
- 
-@media  (min-width: 900px){
 
-  .line1{
-    position: absolute;
-    transform: scaleX(0.0);
-    top: 217px !important;
-    right: 435px !important;
-    width: 370px;
-  }
 
-  .line2{
-    position: absolute;
-    transform: scaleX(0.0);
-    top: 350px !important;
-    right: 435px !important;
-    width: 370px;
-  }
 
-  .line3{
-    position: absolute;
-    transform: scaleX(0.0);
-    top: 485px !important;
-    right: 435px !important;
-    width: 370px;
-  }
-
-  .line4{
-    position: absolute;
-    top: 351px !important;
-    right: 437px !important;
-    width: 363px;
-  }
-
-  .line5{
-    position: absolute;
-    top: 349px !important;
-    right: 575px !important;
-    width: 363px;
-  }
-
-  .line6{
-    top: 361px !important;
-    left: 420px !important;
-    width: 391px;
-    transform: rotate(-45deg) scaleX(1);
-    position: absolute;
-  }
-
-  .line7{
-    position: absolute;
-    top: 351px !important;
-    left: 570px!important;
-    width: 363px;
-  }
-
-  .line8{
-    top: 347px !important;
-    left: 420px !important;
-    width: 391px;
-    transform: rotate(-45deg) scaleX(1);
-    position: absolute;
-  }
+@media  (min-width: 600px){
 
   .game-over {
     position: absolute;
-    left: 10%;
-    width: 79%;
-    height: 450px;
+    height: 85%;
+    left: 1%;
+    width: 97%;
     z-index: 2;
     border-radius: 20%;
     animation: zoomIn 225ms ease-in-out;
-    top: 103px;
   }
-
   .morty-over{
     position: absolute;
-    left: 10%;
-    width: 79%;
-    height: 450px;
+    height: 85%;
+    left: 1%;
+    width: 97%;
+    z-index: 2;
+    border-radius: 20%;
+    animation: zoomIn 225ms ease-in-ou
+  }
+}
+
+@media  (max-width: 599px){
+  .game-over {
+    position: absolute;
+    height: 65%;
+    left: 1%;
+    width: 97%;
     z-index: 2;
     border-radius: 20%;
     animation: zoomIn 225ms ease-in-out;
-    top: 103px;
   }
-  .restart-button{
-    top:563px;
+  .morty-over{
+    position: absolute;
+    height: 65%;
+    left: 1%;
+    width: 97%;
+    z-index: 2;
+    border-radius: 20%;
+    animation: zoomIn 225ms ease-in-out;
   }
-
 }
+
   
