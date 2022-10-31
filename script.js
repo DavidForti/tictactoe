@@ -65,7 +65,6 @@ function checkForEqual() {
 
 
 function checkForWinHorizontal() {
-
     if (fields[0] == fields[1] && fields[1] == fields[2] && fields[0]) {
         winner = fields[0];
         document.getElementById('line-1').style.transform = 'scaleX(1)';//line wir duchgezogen wenn true
@@ -90,7 +89,6 @@ function checkForWinHorizontal() {
 //function popUpForRestart()
 
 function checkForWinVertikal() {
-
     if (fields[0] == fields[3] && fields[3] == fields[6] && fields[0]) {
         winner = fields[0];
         document.getElementById('line-5').style.transform = 'rotate(90deg) scaleX(1)';
@@ -112,8 +110,6 @@ function checkForWinVertikal() {
 }
 
 function checkForWinDiagonl() {
-
-
     if (fields[0] == fields[4] && fields[4] == fields[8] && fields[0]) {
         winner = fields[0];
         document.getElementById('line-7').style.transform = 'rotate(45deg) scaleX(1)';
@@ -128,7 +124,6 @@ function checkForWinDiagonl() {
 }
 
 function checkForWinner() {
-
     if (winner) {
         console.log('Gewonnen:', winner);
         gameOver = true;
