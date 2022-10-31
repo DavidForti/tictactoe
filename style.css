@@ -13,6 +13,11 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
 }
+.favicon{
+  border-radius: 100%;
+  width: 20px;
+  height: 20px;
+}
 
 .center {
   position: relative;
@@ -278,6 +283,20 @@ table {
     animation: zoomIn 225ms ease-in-out !important;
     height: 411px !important;
     top: 82px !important;
+  }
+
+  .medairestart {
+    border: 1px solid rgb(0, 0, 0, 0.5);
+    background-color: rgba(204, 175, 109, 255);
+    z-index: 2;
+    width: 300px;
+    height: 100px;
+    color: white;
+    font-size: 40px;
+    cursor: pointer;
+    top: 450px;
+    position: absolute;
+    border-radius: 50%;
   }
 
 }

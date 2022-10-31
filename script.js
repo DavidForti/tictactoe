@@ -125,7 +125,6 @@ function checkForWinDiagonl() {
 
 function checkForWinner() {
     if (winner) {
-        console.log('Gewonnen:', winner);
         gameOver = true;
         winner = false;
         setTimeout(function () {
