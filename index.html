@@ -1,94 +1,97 @@
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src = "script.js"></script>
+    <script src="script.js"></script>
     <link rel="stylesheet" href="style.css">
     <title>tice tac toe </title>
 </head>
 
 <body>
-    
-    <img  class ="morty-over d-none" id = "MortyWin"  src="img/morty-win.webp">
 
-    <img  class ="game-over d-none" id = "RickWin" src="img/game-over.jpeg">
+    <img class="morty-over d-none" id="MortyWin" src="img/morty-win.webp">
 
-    <button id = "restart-btn" class="restart-button d-none" onclick="restart()">Restart</button>
+    <img class="game-over d-none" id="RickWin" src="img/game-over.jpeg">
 
-    <div class = "player-panel">
-        <div class = "palyer-inactiv" id = "player-1">
-            <img  class ="player" src="./img/rick.png"> Rick 
+    <button id="restart-btn" class="restart-button d-none" onclick="restart()">Restart</button>
+
+    <div class="player-panel">
+        <div id="player-1">
+            <img class="player" src="./img/rick.png"> Rick
         </div>
-        <div id = "player-2">
-            <img  class ="player" src="./img/morty.png"> Morty
+        <div class="palyer-inactiv" id="player-2">
+            <img class="player" src="./img/morty.png"> Morty
         </div>
     </div>
 
-<div class = "div-table">
+    <div class="div-table">
         <table>
 
             <tr>
-                <td onclick = "fillShape(0)" class = "table-top">
-                    <img id = "morty-0" class ="shape d-none" src="./img/morty.png">
-                    <img id = "rick-0" class ="shape d-none" src="./img/rick.png">
-                </td>     
-            <td onclick = "fillShape(1)" class = "table-top">
-                <img id = "morty-1" class ="shape d-none" src="./img/morty.png">
-                <img id = "rick-1" class ="shape d-none" src="./img/rick.png">
-            </td>
-            <td onclick = "fillShape(2)" class = "table-top">
-                <img id = "morty-2" class ="shape d-none" src="./img/morty.png">
-                <img id = "rick-2" class ="shape d-none" src="./img/rick.png">
-            </td> 
-        </tr>
-    </table>
+                <td onclick="fillShape(0)" class="table-top">
+                    <img id="morty-0" class="shape d-none" src="./img/morty.png">
+                    <img id="rick-0" class="shape d-none" src="./img/rick.png">
+                </td>
+                <td onclick="fillShape(1)" class="table-top">
+                    <img id="morty-1" class="shape d-none" src="./img/morty.png">
+                    <img id="rick-1" class="shape d-none" src="./img/rick.png">
+                </td>
+                <td onclick="fillShape(2)" class="table-top">
+                    <img id="morty-2" class="shape d-none" src="./img/morty.png">
+                    <img id="rick-2" class="shape d-none" src="./img/rick.png">
+                </td>
+            </tr>
+        </table>
 
-    <table>
-        <tr>
-            <td onclick = "fillShape(3)">
-                <img id = "morty-3"  class ="shape d-none" src="./img/morty.png">
-                <img id = "rick-3" class ="shape d-none"  src="./img/rick.png">
-            </td>
-            <td onclick = "fillShape(4)" >
-                <img id = "morty-4" class ="shape d-none" src="./img/morty.png"> 
-                <img id = "rick-4" class ="shape d-none" src="./img/rick.png">
-            </td>
-            <td onclick = "fillShape(5)">
-                <img id = "morty-5" class ="shape d-none" src="./img/morty.png">
-                <img id = "rick-5" class ="shape d-none" src="./img/rick.png">
-            </td>
-        </tr>
-    </table>
+        <table>
+            <tr>
+                <td onclick="fillShape(3)">
+                    <img id="morty-3" class="shape d-none" src="./img/morty.png">
+                    <img id="rick-3" class="shape d-none" src="./img/rick.png">
+                </td>
+                <td onclick="fillShape(4)">
+                    <img id="morty-4" class="shape d-none" src="./img/morty.png">
+                    <img id="rick-4" class="shape d-none" src="./img/rick.png">
+                </td>
+                <td onclick="fillShape(5)">
+                    <img id="morty-5" class="shape d-none" src="./img/morty.png">
+                    <img id="rick-5" class="shape d-none" src="./img/rick.png">
+                </td>
+            </tr>
+        </table>
 
-    <table>
-        <tr>
-            <td onclick = "fillShape(6)">
-                <img id = "morty-6" class ="shape d-none" src="./img/morty.png">
-                <img id = "rick-6" class ="shape d-none" src="./img/rick.png">
-            </td>
-            <td onclick = "fillShape(7)">
-                <img id = "morty-7" class ="shape d-none" src="./img/morty.png">
-                <img id = "rick-7" class ="shape d-none" src="./img/rick.png">
-            </td>
-            <td onclick = "fillShape(8)">
-                <img id = "morty-8" class ="shape d-none" src="./img/morty.png">
-                <img id = "rick-8" class ="shape d-none" src="./img/rick.png">
-            </td>
-        </tr>
-    </table>
-    <div class="center">
-    <div  id="line-1" class = "horizontal  line1" style = "bottom: 330px;right: 18px ;"></div>
-    <div  id="line-2" class = "horizontal  line2" style = "bottom:199px;right: 18px;"></div>
-    <div  id="line-3" class = "horizontal line3" style = "bottom: 60px;right: 18px;"></div>
-    <div  id="line-4" class = "vertikal line4 " style = "bottom: 195px; right:20px"></div>
-    <div  id="line-5" class = "vertikal line5" style = "bottom: 195px;right: 155px;"></div>
-    <div  id="line-7" class = "horizontal line6" style = "bottom:188px; left: 9px; transform: rotate(45deg);  width:391px;transform: scaleX(0.0);"></div>
-    <div  id="line-6" class = "vertikal line7" style = "bottom: 195px; left:155px"></div>
-    <div  id="line-8" class = "horizontal line8" style = "bottom: 188px;left: 9px; transform: rotate(-45deg); width:391px;transform: scaleX(0.0);"></div>
+        <table>
+            <tr>
+                <td onclick="fillShape(6)">
+                    <img id="morty-6" class="shape d-none" src="./img/morty.png">
+                    <img id="rick-6" class="shape d-none" src="./img/rick.png">
+                </td>
+                <td onclick="fillShape(7)">
+                    <img id="morty-7" class="shape d-none" src="./img/morty.png">
+                    <img id="rick-7" class="shape d-none" src="./img/rick.png">
+                </td>
+                <td onclick="fillShape(8)">
+                    <img id="morty-8" class="shape d-none" src="./img/morty.png">
+                    <img id="rick-8" class="shape d-none" src="./img/rick.png">
+                </td>
+            </tr>
+        </table>
+
+        <div class="center">
+            <div id="line-1" class="horizontal  line1 d-none" style="bottom: 330px;right: 18px ;"></div>
+            <div id="line-2" class="horizontal  line2 d-none" style="bottom:199px;right: 18px;"></div>
+            <div id="line-3" class="horizontal line3 d-none" style="bottom: 60px;right: 18px;"></div>
+            <div id="line-4" class="vertikal line4 d-none " style="bottom: 195px; right:20px"></div>
+            <div id="line-5" class="vertikal line5 d-none" style="bottom: 195px;right: 155px;"></div>
+            <div id="line-7" class="horizontal line6 d-none"
+                style="bottom:188px; left: 9px; transform: rotate(45deg);  width:391px; transform: scaleX(0.0);"></div>
+            <div id="line-6" class="vertikal line7 d-none" style="bottom: 195px; left:155px"></div>
+            <div id="line-8" class="horizontal line8 d-none"
+                style="bottom: 188px;left: 9px; transform: rotate(-45deg); width:391px; transform: scaleX(0.0);"></div>
+        </div>
+
     </div>
 
-</div>
-    
 </body>
+
 </html>
