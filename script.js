@@ -7,9 +7,8 @@ function fillShape(id) {
     if (!fields[id] && !gameOver) {// ! bedeutet negiert es kan nur noch einmal angeclickt werden 
         changeplayer();
         fields[id] = currentShape;
-        console.log(fields);
         draw();
-        checkForEqual();
+        checkForall();
 
     }
 }
@@ -52,18 +51,25 @@ function draw() {
     }
 }
 
+function checkForall() {
+    checkForWinHorizontal();
+    checkForWinVertikal();
+    checkForWinDiagonl();
+    checkForWinner();
+    checkForTine();
+}
 
-checkForWinHorizontal();
-checkForWinVertikal();
-checkForWinDiagonl();
-checkForWinner();
-checkForTine();
+
+
 
 function checkForTine() {
     if (fields[0] && fields[1] && fields[2] && fields[3] && fields[4] && fields[5] && fields[6] && fields[7] && fields[8]) {
         restart();
     }
+    checkForWinner();
 }
+
+
 
 function checkForWinHorizontal() {
     if (fields[0] == fields[1] && fields[1] == fields[2] && fields[0]) {
@@ -88,6 +94,7 @@ function checkForWinHorizontal() {
 }
 
 //function popUpForRestart()
+
 function checkForWinVertikal() {
     if (fields[0] == fields[3] && fields[3] == fields[6] && fields[0]) {
         winner = fields[0];
