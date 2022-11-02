@@ -5,12 +5,15 @@ body {
   flex-direction: column;
   position: absolute;
   top: 100px;
-  left: 100px;
-  right: 100px;
+  left: 0;
+  right: 0;
   background-image: url("img/background.gif");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  margin-left: auto;
+  margin-right: auto;
+
 }
 
 .favicon {
@@ -128,20 +131,18 @@ table {
 }
 
 .game-over {
+  height: 40px;
   position: absolute;
-  left: 10%;
-  right: 10%;
-  width: 80%;
+  width: 40px;
   z-index: 2;
   border-radius: 20%;
   animation: zoomIn 225ms ease-in-out;
 }
 
 .morty-over {
+  height: 40px;
   position: absolute;
-  left: 10%;
-  right: 10%;
-  width: 80%;
+  width: 40px;
   z-index: 2;
   border-radius: 20%;
   animation: zoomIn 225ms ease-in-out;
@@ -168,7 +169,7 @@ table {
   color: white;
   font-size: 40px;
   cursor: pointer;
-  top: 500px;
+  top: 445px;
   position: absolute;
   border-radius: 50%;
 }
@@ -184,26 +185,21 @@ table {
   }
 
   .game-over {
-    position: absolute !important;
-    left: -56% !important;
-    right: 10% !important;
-    width: 212% !important;
+    left: 1% !important;
+    width: 96% !important;
     z-index: 2 !important;
-    border-radius: 20% !important;
     animation: zoomIn 225ms ease-in-out !important;
-    height: 411px !important;
+    height: 314px !important;
     top: 82px !important;
+
   }
 
   .morty-over {
-    position: absolute !important;
-    left: -56% !important;
-    right: 10% !important;
-    width: 212% !important;
+    left: 1% !important;
+    width: 96% !important;
     z-index: 2 !important;
-    border-radius: 20% !important;
     animation: zoomIn 225ms ease-in-out !important;
-    height: 411px !important;
+    height: 314px !important;
     top: 82px !important;
   }
 
@@ -222,6 +218,28 @@ table {
   }
 }
 
+@media (max-width: 419px) {
+  .game-over {
+    left: 1% !important;
+    width: 96% !important;
+    z-index: 2 !important;
+    animation: zoomIn 225ms ease-in-out !important;
+    height: 314px !important;
+    top: 82px !important;
+
+  }
+
+  .morty-over {
+    left: 1% !important;
+    width: 96% !important;
+    z-index: 2 !important;
+    animation: zoomIn 225ms ease-in-out !important;
+    height: 314px !important;
+    top: 82px !important;
+  }
+}
+
+
 @media (max-width: 375px) {
 
   td {
@@ -237,7 +255,7 @@ table {
   }
 
   .div-table {
-    width: 200%;
+    width: 95%;
     height: 160%;
   }
 
@@ -307,26 +325,20 @@ table {
   }
 
   .game-over {
-    position: absolute !important;
-    left: -56% !important;
-    right: 10% !important;
-    width: 212% !important;
+    left: 1% !important;
+    width: 96% !important;
     z-index: 2 !important;
-    border-radius: 20% !important;
     animation: zoomIn 225ms ease-in-out !important;
-    height: 411px !important;
+    height: 314px !important;
     top: 82px !important;
   }
 
   .morty-over {
-    position: absolute !important;
-    left: -56% !important;
-    right: 10% !important;
-    width: 212% !important;
+    left: 1% !important;
+    width: 96% !important;
     z-index: 2 !important;
-    border-radius: 20% !important;
     animation: zoomIn 225ms ease-in-out !important;
-    height: 411px !important;
+    height: 314px !important;
     top: 82px !important;
   }
 
@@ -346,51 +358,78 @@ table {
 
 }
 
-
-
-
-@media (min-width: 600px) {
+@media (max-width: 600px) {
 
   .game-over {
     position: absolute;
-    height: 85%;
-    left: 1%;
-    width: 97%;
+    height: 400px;
+    object-fit: cover;
+    width: 100px;
     z-index: 2;
-    border-radius: 20%;
-    animation: zoomIn 225ms ease-in-out;
+    border-radius: 50px;
+    animation: zoomIn 225ms ease-in-out
   }
 
   .morty-over {
     position: absolute;
-    height: 85%;
-    left: 1%;
-    width: 97%;
+    height: 400px;
+    object-fit: cover;
+    width: 100px;
     z-index: 2;
-    border-radius: 20%;
-    animation: zoomIn 225ms ease-in-ou
+    border-radius: 50px;
+    animation: zoomIn 225ms ease-in-out
   }
 }
 
-@media (max-width: 599px) {
+@media (max-width: 585px) {
   .game-over {
     position: absolute;
-    height: 65%;
-    left: 1%;
-    width: 97%;
+    height: 81%;
+    object-fit: cover;
+    width: 75%;
     z-index: 2;
-    border-radius: 20%;
+    border-radius: 50px;
     animation: zoomIn 225ms ease-in-out;
   }
 
   .morty-over {
     position: absolute;
-    height: 65%;
-    left: 1%;
-    width: 97%;
+    height: 81%;
+    object-fit: cover;
+    width: 75%;
     z-index: 2;
-    border-radius: 20%;
+    border-radius: 50px;
     animation: zoomIn 225ms ease-in-out;
+  }
+}
+
+@media (min-width: 599px) {
+  .game-over {
+    position: absolute;
+    height: 81%;
+    object-fit: cover;
+    width: 75%;
+    z-index: 2;
+    border-radius: 50px;
+    animation: zoomIn 225ms ease-in-out;
+  }
+
+  .morty-over {
+    position: absolute;
+    height: 81%;
+    object-fit: cover;
+    width: 75%;
+    z-index: 2;
+    border-radius: 50px;
+    animation: zoomIn 225ms ease-in-out;
+  }
+
+  .line6 {
+    bottom: 198px !important;
+    left: -18px !important;
+    width: 391px;
+    transform: rotate(-45deg) scaleX(1);
+    position: absolute;
   }
 }
 

@@ -12,6 +12,7 @@ function fillShape(id) {
 
     }
 }
+
 function changeplayer() {
     if (currentShape == 'morty') {// ist = morty
         currentShape = 'rick'; // dann wird rick eingefügt 
@@ -23,7 +24,6 @@ function changeplayer() {
         document.getElementById('player-2').classList.add('palyer-inactiv');// rick wird ausgeblendet
     }
 }
-
 //  spiel von neu beginnen          
 function restart() {
     gameOver = false;
@@ -59,17 +59,12 @@ function checkForall() {
     checkForTine();
 }
 
-
-
-
 function checkForTine() {
     if (fields[0] && fields[1] && fields[2] && fields[3] && fields[4] && fields[5] && fields[6] && fields[7] && fields[8]) {
         restart();
     }
-    checkForWinner();
+
 }
-
-
 
 function checkForWinHorizontal() {
     if (fields[0] == fields[1] && fields[1] == fields[2] && fields[0]) {
@@ -92,9 +87,7 @@ function checkForWinHorizontal() {
 
     checkForWinner();
 }
-
 //function popUpForRestart()
-
 function checkForWinVertikal() {
     if (fields[0] == fields[3] && fields[3] == fields[6] && fields[0]) {
         winner = fields[0];
